@@ -1,0 +1,742 @@
+/* global clases */
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.TextDecoration_None {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 78%;
+  margin: auto;
+}
+@media (max-width: 1400px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+.cus_Margin_Padding {
+  margin-top: 50px;
+  padding: 40px 10px;
+}
+@media (max-width: 767px) {
+  .cus_Margin_Padding {
+    margin-top: 0;
+  }
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-4 {
+  width: calc(33.3333333333% - 20px);
+}
+
+.col-8 {
+  width: calc(66.777777777% - 20px);
+}
+
+.col-6 {
+  width: calc(50% - 20px);
+}
+
+.Gen-Desc {
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+
+/* sections styles */
+nav {
+  padding: 10px 15px;
+  background-color: #0b9586;
+  color: white;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .collapseBtn {
+  width: 50px;
+  background-color: transparent;
+  height: 50px;
+  font-size: 36px;
+  color: rgba(255, 255, 255, 0.6784313725);
+  border-radius: 8px;
+  border: none;
+  border: 2px solid;
+}
+nav .logoImage {
+  opacity: 0.5;
+  filter: brightness(0.5);
+}
+nav .menu .active {
+  background-color: rgba(0, 0, 0, 0.1803921569);
+  padding: 8px 2px;
+  border-radius: 8px;
+  border-bottom: 4px solid rgba(0, 0, 0, 0.4196078431);
+}
+nav .menu a {
+  color: white;
+  display: inline-block;
+  width: 140px;
+  font-size: 1.25rem;
+  text-align: center;
+}
+nav .collapseBtn {
+  display: none;
+}
+nav .phone span {
+  font-size: 1.3rem;
+  text-align: right;
+  padding-bottom: 4px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6705882353);
+  display: block;
+}
+nav .phone .phoneHead {
+  font-size: 1.8rem;
+}
+@media (max-width: 1200px) {
+  nav .phone .phoneHead {
+    font-size: 1.5rem;
+  }
+  nav .menu a {
+    width: 115px;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 992px) {
+  nav .collapseBtn {
+    display: block;
+  }
+  nav .menu,
+  nav .phone {
+    display: none;
+  }
+}
+
+header {
+  background: url("../img/home.png");
+  background-size: cover;
+  height: 90vh;
+  position: relative;
+  color: white;
+}
+header .container {
+  padding: 20px;
+}
+header .content {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .header {
+  font-size: 4.2rem;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+header .btns {
+  display: flex;
+  margin-top: 45px;
+}
+header .btns .CallBtn,
+header .btns .ReqBtn {
+  border-radius: 30px;
+  width: 200px;
+  padding: 13px;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+header .btns .CallBtn {
+  background-color: #0b9586;
+  margin-right: 30px;
+}
+header .btns .ReqBtn {
+  background-color: #ffbb1c;
+  color: black;
+}
+@media (max-width: 1650px) {
+  header .content {
+    width: 70%;
+  }
+}
+@media (max-width: 1200px) {
+  header .content {
+    width: 90%;
+  }
+}
+@media (max-width: 992px) {
+  header .container {
+    padding: 10px;
+  }
+  header .header {
+    font-size: 3.7rem;
+  }
+  header .desc {
+    font-size: 1.3rem;
+  }
+}
+
+.Friendliest .col {
+  width: 50%;
+}
+.Friendliest .header {
+  font-size: 49px;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+.Friendliest .desc {
+  color: rgba(0, 0, 0, 0.5803921569);
+}
+.Friendliest .AdvancedDetails {
+  margin-top: 30px;
+}
+.Friendliest .AdvancedDetails span {
+  color: #0b9586;
+}
+.Friendliest .AdvancedDetails .details {
+  font-size: 1.6rem;
+  padding: 8px 0;
+}
+.Friendliest .img-col {
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+.Friendliest .img-col .img-container {
+  position: relative;
+}
+.Friendliest .img-col .piece {
+  position: absolute;
+  width: 220px;
+  height: 165px;
+  padding: 30px;
+  text-align: center;
+  background-color: #ffbb1c;
+  border-radius: 8px;
+  left: -12%;
+  bottom: 4%;
+}
+.Friendliest .img-col .info {
+  margin-top: 5px;
+  font-size: 19px;
+}
+@media (max-width: 992px) {
+  .Friendliest .col {
+    width: 100%;
+    padding: 5px;
+  }
+  .Friendliest .header {
+    font-size: 30px;
+  }
+  .Friendliest .desc {
+    font-size: 18px;
+    margin-top: 19px;
+  }
+  .Friendliest .AdvancedDetails .details {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .Friendliest .img-col {
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .Friendliest .img-col .piece {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25%;
+  }
+}
+
+.CleanEnergy {
+  background: url("../img/CleanEnergy.png");
+  background-size: cover;
+  padding: 160px 10px;
+  color: white;
+}
+.CleanEnergy .header {
+  font-size: 3rem;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+.CleanEnergy .desc {
+  color: rgba(255, 255, 255, 0.768627451);
+  width: 54%;
+}
+.CleanEnergy .callus {
+  background-color: #ffbb1c;
+  margin-top: 25px;
+  padding: 10px;
+  border-radius: 30px;
+  text-align: center;
+  width: 208px;
+  color: black;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+@media (max-width: 1200px) {
+  .CleanEnergy .desc {
+    width: 79%;
+  }
+}
+@media (max-width: 992px) {
+  .CleanEnergy {
+    margin-top: 130px;
+    background-position-x: 60%;
+    padding: 111px 10px;
+  }
+  .CleanEnergy .header {
+    font-size: 2.5rem;
+  }
+  .CleanEnergy .desc {
+    width: 100%;
+    font-size: 21px;
+  }
+}
+
+.SolarKits .header,
+.SolarKits .desc {
+  text-align: center;
+}
+.SolarKits .header {
+  font-size: 2.8rem;
+  position: relative;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+.SolarKits .header::before {
+  background-color: #0b9586;
+  width: 122px;
+  position: absolute;
+  height: 2px;
+  content: "";
+  bottom: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.SolarKits .desc {
+  width: 80%;
+  margin: 30px auto;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.6509803922);
+}
+.SolarKits .row {
+  margin-top: 55px;
+}
+.SolarKits .col {
+  width: calc(33.3333333333% - 45px);
+  margin: 20px auto;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 0px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.SolarKits .col:hover .view .icon {
+  margin-left: 10px;
+}
+.SolarKits .colDetails {
+  padding: 20px 30px;
+}
+.SolarKits .colDetails .colHead {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.SolarKits .colDetails .colDesc {
+  margin-top: 25px;
+}
+.SolarKits .colDetails .view {
+  color: #0b9586;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.SolarKits .colDetails .view .icon {
+  transition: 0.2s;
+}
+.SolarKits .img-fluid {
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .SolarKits .col {
+    width: 100%;
+  }
+  .SolarKits .desc {
+    width: 100%;
+  }
+  .SolarKits .row {
+    margin-top: 0;
+  }
+}
+
+.OverReplacement {
+  background: url("../img/OverReplacement.png");
+  background-size: cover;
+  padding: 110px 5px;
+}
+.OverReplacement .content {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 13px;
+}
+.OverReplacement .header {
+  font-size: 2.3rem;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+.OverReplacement .desc {
+  margin-top: 30px;
+  font-size: 1.25rem;
+}
+@media (max-width: 767px) {
+  .OverReplacement .header {
+    font-size: 2rem;
+  }
+  .OverReplacement .desc {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+}
+
+.EnergyInnovators {
+  background-color: rgba(255, 187, 28, 0.05);
+  padding: 90px 5px 50px 5px;
+}
+.EnergyInnovators .col-3 {
+  width: 30%;
+  padding-right: 20px;
+}
+.EnergyInnovators .icon {
+  background-color: rgb(60, 171, 144);
+  color: white;
+  font-size: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 8px;
+}
+.EnergyInnovators .header {
+  margin-top: 30px;
+  font-size: 44px;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+.EnergyInnovators .desc {
+  margin-top: 30px;
+  font-size: 19px;
+  color: rgba(2, 2, 2, 0.5215686275);
+}
+.EnergyInnovators .col-9 {
+  width: 67%;
+}
+.EnergyInnovators .col-9 .col-6 {
+  width: 43%;
+  margin: 10px auto;
+  border: 2px solid rgba(60, 171, 144, 0.7);
+  border-radius: 8px;
+  background-color: rgba(60, 171, 144, 0.1);
+  padding: 20px;
+}
+.EnergyInnovators .col-9 .col-6 .img-fluid {
+  margin: auto;
+}
+.EnergyInnovators .col-9 .col-6 .colHead {
+  font-size: 1.5rem;
+  padding: 20px 0;
+}
+.EnergyInnovators .col-9 .col-6 .view {
+  margin-top: 30px;
+  color: rgb(60, 171, 144);
+  font-weight: 500;
+  font-size: 19px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+@media (max-width: 992px) {
+  .EnergyInnovators {
+    padding: 90px 10px 50px 10px;
+    padding-top: 40px;
+  }
+  .EnergyInnovators .row {
+    margin-top: 35px;
+  }
+  .EnergyInnovators .header {
+    font-size: 39px;
+  }
+  .EnergyInnovators .col {
+    width: 100% !important;
+  }
+}
+
+.Ourvalues .header,
+.Ourvalues .desc {
+  text-align: center;
+}
+.Ourvalues .header {
+  font-size: 2.3rem;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+.Ourvalues .desc {
+  font-size: 1.25rem;
+  margin-top: 15px;
+}
+.Ourvalues .icon {
+  color: #2eb795;
+  font-size: 45px;
+}
+.Ourvalues .row {
+  margin-top: 30px;
+}
+.Ourvalues .col-4 {
+  margin: 20px auto;
+  width: calc(33.3333333333% - 70px);
+  padding: 20px;
+  border: 2px solid rgba(60, 171, 144, 0.7);
+  background-color: rgba(60, 171, 144, 0.1);
+  border-radius: 8px;
+}
+.Ourvalues .colHead {
+  font-size: 1.4rem;
+  padding: 20px 0;
+  font-weight: 700;
+}
+@media (max-width: 992px) {
+  .Ourvalues .col-4 {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+
+.whatTheySay .icon {
+  color: #2eb795;
+  font-size: 45px;
+}
+.whatTheySay .header {
+  padding: 20px 0;
+  font-size: 2.6rem;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+.whatTheySay .desc {
+  font-size: 21px;
+}
+.whatTheySay .col-4 {
+  width: 30%;
+  margin: auto;
+}
+.whatTheySay .col-8 {
+  width: 63%;
+  margin: auto;
+}
+.whatTheySay .content {
+  background-color: rgba(60, 171, 144, 0.1);
+  border-radius: 13px;
+  padding: 30px;
+  position: relative;
+}
+.whatTheySay .content .dots {
+  position: absolute;
+  top: 9%;
+  right: 4%;
+}
+.whatTheySay .content .dots span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(156, 156, 156, 0.5607843137);
+  border-radius: 50%;
+}
+.whatTheySay .content .dots .active {
+  background-color: #444444;
+}
+.whatTheySay .content .arrows {
+  position: absolute;
+  right: 4%;
+  bottom: 6%;
+  font-size: 36px;
+  color: rgba(0, 0, 0, 0.631372549);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.whatTheySay .content p {
+  color: #2eb795;
+  font-weight: 600;
+}
+.whatTheySay .content .colHead {
+  font-size: 25px;
+  width: 75%;
+  padding: 20px 0;
+}
+.whatTheySay .content .review {
+  display: flex;
+  align-items: center;
+  margin-top: 45px;
+}
+.whatTheySay .content .review .img-fluid {
+  margin-right: 14px;
+}
+.whatTheySay .content .review .name {
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+@media (max-width: 992px) {
+  .whatTheySay .col {
+    width: 100%;
+  }
+  .whatTheySay .content {
+    margin-top: 30px;
+    padding: 30px 15px 63px 15px;
+  }
+  .whatTheySay .content .colHead {
+    font-size: 22px;
+    width: 100%;
+  }
+  .whatTheySay .content .arrows {
+    right: 4%;
+    bottom: 3%;
+  }
+}
+
+footer {
+  background-color: rgb(40, 54, 70);
+  color: white;
+  margin-top: 50px;
+  padding: 90px 10px;
+}
+footer .col {
+  margin-bottom: 20px;
+}
+footer .links {
+  margin-top: 50px;
+}
+footer .links a {
+  color: white;
+  font-size: 18px;
+  margin-right: 40px;
+}
+footer .FormCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+footer .FormCol form {
+  position: relative;
+}
+footer .FormCol form .submitBtn,
+footer .FormCol form .form-control {
+  border-radius: 30px;
+  font-size: 17px;
+  padding: 10px;
+}
+footer .FormCol form .submitBtn {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  height: 100%;
+  width: 39%;
+  border: none;
+  background-color: #ffbb1c;
+}
+footer .FormCol form .form-control {
+  background-color: rgba(255, 255, 255, 0.0509803922);
+  height: 30px;
+  color: rgba(255, 255, 255, 0.6117647059);
+  border: 1px solid;
+  width: 316px;
+}
+footer .FormCol .label {
+  font-size: 19px;
+  display: block;
+  padding: 13px 75px 20px 0;
+}
+footer .line {
+  background-color: rgba(238, 238, 238, 0.3882352941);
+  margin: 20px auto;
+  height: 0.5px;
+}
+footer .copyRight .termsCol {
+  display: flex;
+}
+footer .copyRight .termsCol .term {
+  margin-right: 60px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.3294117647);
+  font-size: 13px;
+  position: relative;
+}
+footer .copyRight .termsCol .term::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.3294117647);
+  width: 2px;
+  height: 100%;
+  right: -30px;
+  top: 0;
+}
+footer .copyRight .NameCol {
+  text-align: right;
+  color: rgba(255, 255, 255, 0.3294117647);
+  font-size: 13px;
+}
+@media (max-width: 992px) {
+  footer .col {
+    width: 100%;
+  }
+  footer .FormCol {
+    align-items: self-start;
+  }
+  footer .copyRight .NameCol {
+    text-align: start;
+  }
+}
+@media (max-width: 767px) {
+  footer {
+    padding: 55px 10px;
+  }
+  footer .links a {
+    font-size: 15px;
+    margin-right: 20px;
+  }
+  footer .FormCol form {
+    width: 100%;
+  }
+  footer .copyRight .termsCol .term {
+    margin-right: 24px;
+  }
+  footer .copyRight .termsCol .term::after {
+    right: -12px;
+  }
+}
